@@ -1,4 +1,5 @@
-<%@page language="java" contentType="text/html" %>
+<%@page import="java.time.LocalDate"%>
+<%@page language="java" contentType="text/html; charset =UTF-8" pageEncoding="UTF-8" %>
 <html>
 <head>
     <title>HOME PAGE</title>
@@ -14,5 +15,11 @@ Nasz pierwszy jsp
             numbers = "";
         }
     } %></h1>
+<h2><%= LocalDate.now().toString()%> </h2>
+<h3><% String name = request.getParameter("name");
+    String surname = request.getParameter("surname")
+            ;%></h3>
+<%-- Komentarz jsp --%>
+<!-- Komentarz html -->
 </body>
 </html>
